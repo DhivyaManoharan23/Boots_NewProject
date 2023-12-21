@@ -14,8 +14,9 @@ public class BootsLoginPage
 
     public void gsearchbtn(WebDriver driver, String strkeyword)
     {
-        WebDriverWait wait = new WebDriverWait(driver, 40);
+        WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.elementToBeClickable(searchbtn));
         searchbtn.sendKeys(strkeyword);
+        System.out.println("jenkins");
     }
 }
